@@ -102,7 +102,7 @@ def descargar_mp3(url):
     print("2. 192 kbps")
     print("3. 320 kbps")
     while True:
-        eleccion = input("\n👉 Elige una opción (1-3): ").strip()
+        eleccion = input("\n Elige una opción (1-3): ").strip()
         if eleccion == "1": calidad = "128"; break
         elif eleccion == "2": calidad = "192"; break
         elif eleccion == "3": calidad = "320"; break
@@ -124,21 +124,21 @@ def descargar_mp3(url):
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([url])
 
-    print(f"\n✅ ¡Listo! El MP3 está en:\n{salida_final}")
+    print(f"\n ¡Listo! El MP3 está en:\n{salida_final}")
 
 
 if __name__ == "__main__":
-    print("=== 📥 Descargador YouTube ===")
-    url = input("👉 Ingresa el enlace del video: ").strip()
+    print("=== Descargador YouTube ===")
+    url = input("Ingresa el enlace del video: ").strip()
 
     print("\n1. Descargar como MP4 (video + audio)")
     print("2. Descargar como MP3 (solo audio)")
 
-    opcion = input("\n👉 Elige una opción (1-2): ").strip()
+    opcion = input("\n Elige una opción (1-2): ").strip()
 
     if opcion == "1":
         descargar_mp4(url)
     elif opcion == "2":
         descargar_mp3(url)
     else:
-        print("❌ Opción inválida.")
+        print(" Opción inválida.")
