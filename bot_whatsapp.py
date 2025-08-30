@@ -12,8 +12,8 @@ from selenium.webdriver.common.keys import Keys
 from concurrent.futures import ThreadPoolExecutor
 import os 
 
-numero_contacto = ""
-nombre_contacto = ""
+numero_contacto = "+51986268240"
+nombre_contacto = "Harold"
 historial_conversacion = []
 detener = False
 driver = None
