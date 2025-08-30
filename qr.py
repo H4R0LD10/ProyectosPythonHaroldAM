@@ -1,7 +1,7 @@
 import qrcode
 
 name="paginaAra"
-url = "https://h4r41010.github.io/PaginaAraceli/"
+url = "https://h4r41010.github.io/PaginaHarold/"
 qr=qrcode.QRCode(
     version=1,
     box_size=25,
